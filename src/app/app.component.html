@@ -1,0 +1,44 @@
+
+<nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="/">
+    Formulario
+  </a>
+</nav>
+
+    <span>{{ title }} </span>
+
+  <br/>
+
+
+<div class="conteiner">
+  <div class="row">
+    <div class="col-md-5">
+   <ul class="list-group ">
+
+   </ul>
+   
+  </div>
+    <div class="col-md-5"><img src="https://desarrolloweb.com/storage/tag_images/actual/n20BWPxy4WXVZyC94Cvn2pPus1LSIo2drcqniEkJ.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="HTML" data-noaft="1" style="width: 200px; height: 100px; margin: 40px 0px;"></div>
+  </div>
+</div>
+
+<form [formGroup]="formulario">
+  
+  <div class="form-group">
+    <label for="idpersona">Id</label>
+    <input type="text" formControlName="IdPersona" class="form-control" id="idpersona" >
+    <label for="Documento">documento</label>
+    <input type="text" formControlName="Documento" class="form-control" id="Documento">
+    <label for="Nombres">Nombres</label>
+    <input type="text" formControlName="Nombres" class="form-control" id="Nombres" >
+    <label for="Apellidos">Apellidos</label>
+    <input type="text" formControlName="Apellidos" class="form-control" id="Apellidos" >
+    <label for="Telefono">Telefono</label>
+    <input type="text" formControlName="Telefono" class="form-control" id="Telefono" >
+    <label for="Correo">Correo</label>
+    <input type="text" formControlName="Correo" class="form-control" id="Correo" >
+    <label for="Direccion">Direccion</label>
+    <input type="text" formControlName="Direccion" class="form-control" id="Direccion">
+    </div>
+    <button class="boton" (click)="Guardar()">Guardar</button>
+
